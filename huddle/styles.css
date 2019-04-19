@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+html, body {
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+  background-image: url(./images/bg-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: hsl(257, 40%, 49%);
+  max-width: fit-content;
+  overflow: hidden;
+}
+
+embed {
+  height: 20vh;
+}
+
+header {
+  display: flex;
+  align-items: center;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.fa {
+  padding: 8px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid white;
+  border-radius: 50%;
+  background: hsl(257, 40%, 49%);;
+  color: white;
+}
+
+.fa:hover {
+  background: #3B5998;
+}
+
+#illustration {
+  width: 100%;
+}
+
+#summary {
+  padding-left: 30px;
+  width: 50%;
+}
+
+#register {
+  border-radius: 20px;
+  width: 20vh;
+  height: 5vh;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+}
+
+#socialMedia {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 0px 30px 8px 0px;
+}
+
+@media all and (max-width: 935px) {
+  .row {
+    flex-direction: column;
+  }
+  body {
+    overflow-y: auto;
+  }
+  #summary {
+    width: 100%;
+  }
+}
